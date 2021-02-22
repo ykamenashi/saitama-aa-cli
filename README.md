@@ -1,0 +1,2 @@
+# saitama-aa-cli
+さいたまさいたま！
