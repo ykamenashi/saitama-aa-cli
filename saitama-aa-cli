@@ -1,8 +1,25 @@
 #!/usr/bin/env bash
+
 if [ "$(uname)" == "Darwin" ] ; then
   MACSPACE="    "
 else
   MACSPACE=
+fi
+
+if [ "$1" == "-u" ]; then
+  SAITAMA_SUN="$(unko.shout $2)"
+fi
+if [ -n "$SAITAMA_SUN" ] ; then
+  echo "$SAITAMA_SUN"
+  cat << EOS
+　　　　　　　　　　　　　　　　　　　 ∩ ∧　∧　　／￣￣￣￣￣￣￣￣￣￣
+￣￣￣￣￣￣￣￣＼${MACSPACE}${MACSPACE}∩ ∧　∧${MACSPACE}　＼（ ﾟ∀ﾟ）＜　さいたまさいたまさいたま！
+さいたま～～～！ 　 ＞${MACSPACE}（ ﾟ∀ﾟ ）/ ｜　　　　/　＼＿＿＿＿＿＿＿＿＿＿
+＿＿＿＿＿＿＿＿／ ${MACSPACE}${MACSPACE}｜　　　 〈　｜　　　｜
+　　　　　　　　　　　　　 /　／＼_」　/　／＼」
+　　　　　　　　　　　　　 ￣　　　　 / ／
+EOS
+  exit 0
 fi
 cat << EOS
 　　　　　　　　　　　　　　　　＼　│　／
