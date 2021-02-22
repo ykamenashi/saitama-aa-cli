@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+if [ "$(uname)" == "Darwin" ] ; then
+  MACSPACE="    "
+else
+  MACSPACE=
+fi
+cat << EOS
+　　　　　　　　　　　　　　　　＼　│　／
+　　　　　　　　　　　　　　　　　／￣＼　　 ／￣￣￣￣￣￣￣￣￣
+　　　　　　　　　　　　　　　─（ ﾟ ∀ ﾟ ）＜　さいたまさいたま！
+　　　　　　　　　　　　　　　　　＼＿／　　 ＼＿＿＿＿＿＿＿＿＿
+　　　　　　　　　　　　　　　　／　│　＼
+　　　　　　　　　　　　　　　　　　　 ∩ ∧　∧　　／￣￣￣￣￣￣￣￣￣￣
+￣￣￣￣￣￣￣￣＼${MACSPACE}${MACSPACE}∩ ∧　∧${MACSPACE}　＼（ ﾟ∀ﾟ）＜　さいたまさいたまさいたま！
+さいたま～～～！ 　 ＞${MACSPACE}（ ﾟ∀ﾟ ）/ ｜　　　　/　＼＿＿＿＿＿＿＿＿＿＿
+＿＿＿＿＿＿＿＿／ ${MACSPACE}${MACSPACE}｜　　　 〈　｜　　　｜
+　　　　　　　　　　　　　 /　／＼_」　/　／＼」
+　　　　　　　　　　　　　 ￣　　　　 / ／
+EOS
+
